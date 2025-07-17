@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galaxy Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="hidden-before-name font-sans bg-gray-900 text-gray-100 transition duration-300">
+
+    <!-- Navbar -->
+    <header class="bg-galaxy sticky top-0 z-50 shadow">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-yellow-400">RevoU</h1>
+            <div class="md:hidden">
+                <button id="menuBtn" class="text-yellow-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-yellow-400 font-medium" id="desktopMenu">
+                <a href="#home" class="hover:text-yellow-300 transition">Home</a>
+                <a href="#profile" class="hover:text-yellow-300 transition">Our Profile</a>
+                <a href="#contact" class="hover:text-yellow-300 transition">Message Us</a>
+                <button id="toggleMode" class="focus:outline-none">
+                    <img id="themeIcon" src="https://cdn-icons-png.flaticon.com/512/169/169367.png" class="w-6 h-6" />
+                </button>
+            </nav>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 text-yellow-400 space-y-2">
+            <a href="#home" class="block hover:text-yellow-300">Home</a>
+            <a href="#profile" class="block hover:text-yellow-300">Our Profile</a>
+            <a href="#contact" class="block hover:text-yellow-300">Message Us</a>
+            <button id="toggleModeMobile" class="mt-2">
+                <img id="themeIconMobile" src="https://cdn-icons-png.flaticon.com/512/169/169367.png"
+                    class="w-6 h-6 inline" />
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-24 text-center bg-gradient-to-br from-gray-900 via-indigo-950 to-gray-800">
+        <h2 class="text-4xl font-bold mb-2 text-yellow-400">Hi <span id="name">Yang Mulia</span> 👋</h2>
+        <h1 class="text-welcome text-white">Welcome to our cosmic profile</h1>
+    </section>
+
+    <!-- Our Profile -->
+    <section id="profile" class="py-20 bg-galaxy">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-yellow-400 mb-10">Our Profile</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <img src="assets/gambar-revou.png" alt="RevoU Team"
+                    class="rounded-lg shadow-lg transform hover:scale-105 transition duration-300 w-full" />
+                <div>
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">About RevoU</h3>
+                    <p class="mb-4 text-gray-300">
+                        RevoU adalah institusi pendidikan online yang fokus pada pengembangan skill digital seperti Data
+                        Analytics, Digital Marketing, Software Engineering, dan Product Management. RevoU menawarkan
+                        program
+                        intensif dan terstruktur untuk membantu siswa berkarier di bidang teknologi.
+                    </p>
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">Vision</h3>
+                    <p class="mb-4 text-gray-300">
+                        Menjadi institusi pendidikan terdepan yang memberdayakan masyarakat Asia Tenggara untuk
+                        mendapatkan
+                        karier impian di dunia digital.
+                    </p>
+                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">Mission</h3>
+                    <p class="text-gray-300">
+                        Memberikan pendidikan berkualitas tinggi yang relevan dengan kebutuhan industri, dengan dukungan
+                        instruktur berpengalaman dan komunitas yang suportif.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Message Us -->
+    <section id="contact" class="py-20 bg-gradient-to-t from-gray-900 via-gray-800 to-gray-900">
+        <div class="max-w-xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-yellow-400">Message Us</h2>
+            <form class="bg-gray-800 p-6 sm:p-8 rounded-xl shadow-md space-y-5">
+                <input type="text" placeholder="Your Name"
+                    class="w-full px-4 py-2 border border-gray-600 bg-gray-900 text-white rounded focus:ring-2 focus:ring-yellow-400 outline-none"
+                    required />
+                <input type="email" placeholder="Your Email"
+                    class="w-full px-4 py-2 border border-gray-600 bg-gray-900 text-white rounded focus:ring-2 focus:ring-yellow-400 outline-none"
+                    required />
+                <textarea rows="4" placeholder="Your Message"
+                    class="w-full px-4 py-2 border border-gray-600 bg-gray-900 text-white rounded focus:ring-2 focus:ring-yellow-400 outline-none"
+                    required></textarea>
+                <button type="submit"
+                    class="w-full bg-yellow-400 hover:bg-yellow-300 transition text-gray-900 py-2 rounded font-semibold shadow-md">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-gray-400 border-t border-gray-600 mt-12">
+        &copy; 2025 annezetya. All rights reserved.
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

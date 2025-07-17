@@ -1,0 +1,69 @@
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .bg-galaxy {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        }
+
+        .accent-yellow {
+            color: #facc15;
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .light-mode {
+            background: radial-gradient(ellipse at top, #f8fafc, #e2e8f0);
+            color: #0f172a;
+        }
+
+        .light-mode .bg-galaxy {
+            background: linear-gradient(135deg, #e2e8f0 0%, #f8fafc 100%);
+        }
+
+        .light-mode .text-gray-100,
+        .light-mode .text-gray-300,
+        .light-mode .text-gray-400 {
+            color: #0f172a !important;
+        }
+
+        .light-mode .text-gray-300.text-welcome {
+            color: white !important;
+        }
+
+        .light-mode .bg-gray-800,
+        .light-mode .bg-gray-900 {
+            background-color: #f1f5f9 !important;
+        }
+
+        .light-mode input,
+        .light-mode textarea {
+            background-color: #fff !important;
+            color: #0f172a !important;
+        }
+
+        .light-mode footer {
+            border-color: #cbd5e1;
+        }
+
+
+        @media (max-width: 768px) {
+            .text-4xl {
+                font-size: 2rem;
+            }
+
+            .text-3xl {
+                font-size: 1.5rem;
+            }
+
+            form input,
+            form textarea {
+                font-size: 0.875rem;
+            }
+        }
